@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+
+
+{%block content %}
+
+<br><br><br>
+<div class="center">
+
+    <div class="row">
+
+        <div class="column" id="Col1">
+
+
+            <div id="imageEdges"></div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="imageinput" accept="image/*" required="required">
+            </div>
+
+        </div>
+
+        <div class="column" id="Col2">
+            <div id="ApplyEdges"></div>
+
+        </div>
+
+        <div id="mycalc" style="position: relative; top: 60px; z-index: -1;">
+            <div id="info1"></div>
+            
+        </div>
+
+    </div>
+</div>
+
+<br><br><br>
+<div class="center">
+
+    <div id="controll_container">
+
+        <div id="divApplyEdgesLabel">
+
+
+        </div>
+
+        <button id="submit_btn" class="btn btn-outline-dark">Submit</button>
+
+    </div>
+
+</div>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/facedetection.css') }}">
+<script src="{{ url_for('static', filename='js/facedetection.js') }}"></script>
+
+
+{% endblock %}
